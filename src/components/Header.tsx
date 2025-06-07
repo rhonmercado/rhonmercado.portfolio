@@ -40,7 +40,7 @@ const Header: React.FC = () => {
     >
       <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         <Link to="/" className="text-purple font-bold text-xl">
-          YourName
+          MyPortfolio
         </Link>
 
         {/* Desktop Menu */}

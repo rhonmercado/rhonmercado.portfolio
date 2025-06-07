@@ -3,15 +3,21 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Project One",
+    title: "Project 1",
     description: "A cool project using React and TypeScript.",
     link: "#",
   },
   {
-    title: "Project Two",
+    title: "Project 2",
     description: "Another awesome app built with Framer Motion animations.",
     link: "#",
   },
+  {
+    title: "Project 3",
+    description: "Another awesome app built with Framer Motion animations.",
+    link: "#",
+  },
+
   // Add more projects as needed
 ];
 
