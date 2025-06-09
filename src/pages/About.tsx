@@ -8,14 +8,10 @@ const personalInfo = [
   { label: "Gender", value: "Male" },
   { label: "Role", value: "Aspiring Full-Stack Developer" },
   { label: "Location", value: "Marilao, Bulacan" },
-  { label: "Email", value: "rhonmercado520@gmail.com" },
-  { label: "Phone", value: "+63 956 268 1437" },
   { label: "Birthday", value: "05/20/1999" },
   { label: "Nationality", value: "Filipino" },
   { label: "Languages", value: "Filipino, English" },
   { label: "Website", value: "rhonel.dev" },
-  { label: "LinkedIn", value: "linkedin.com/in/rhonel" },
-  { label: "GitHub", value: "github.com/rhoneldev" },
 ];
 
 // === Work Experience Data ===

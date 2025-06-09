@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, Linkedin, Facebook, Github } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const navLinks = [
@@ -8,24 +8,6 @@ const navLinks = [
   { name: "About", to: "/about" },
   { name: "Projects", to: "/projects" },
   { name: "Contact", to: "/contact" },
-];
-
-const socialLinks = [
-  {
-    name: "LinkedIn",
-    icon: <Linkedin size={20} />,
-    url: "https://linkedin.com/in/your-profile",
-  },
-  {
-    name: "Facebook",
-    icon: <Facebook size={20} />,
-    url: "https://facebook.com/your-profile",
-  },
-  {
-    name: "GitHub",
-    icon: <Github size={20} />,
-    url: "https://github.com/your-profile",
-  },
 ];
 
 const Header: React.FC = () => {
@@ -59,30 +41,13 @@ const Header: React.FC = () => {
             ))}
           </ul>
 
-          {/* Social Icons (before Let's Connect) */}
-          <div className="flex space-x-4 ml-6">
-            {socialLinks.map(({ name, icon, url }) => (
-              <a
-                key={name}
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={name}
-                className="text-textSecondary hover:text-pink transition-colors duration-300"
-              >
-                {icon}
-              </a>
-            ))}
-          </div>
-
-          {/* Let's Connect Button */}
-          <Link
-            to="/contact"
+          {/* Let's Connect Email Button (Desktop) */}
+          <a
+            href="mailto:rhonmercado520@gmail.com"
             className="ml-6 px-5 py-2 border border-pink rounded-md text-pink font-semibold hover:bg-pink hover:text-base transition-colors duration-300"
-            onClick={() => setIsOpen(false)}
           >
             Let's Connect
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Hamburger */}
@@ -115,31 +80,15 @@ const Header: React.FC = () => {
             </li>
           ))}
 
-          {/* Social icons in mobile menu (before button) */}
-          <li className="flex space-x-6 py-2">
-            {socialLinks.map(({ name, icon, url }) => (
-              <a
-                key={name}
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={name}
-                className="text-textSecondary hover:text-pink transition-colors duration-300"
-              >
-                {icon}
-              </a>
-            ))}
-          </li>
-
-          {/* Let's Connect button mobile */}
+          {/* Let's Connect Email Button (Mobile) */}
           <li>
-            <Link
-              to="/contact"
+            <a
+              href="mailto:rhonmercado520@gmail.com"
               className="block px-4 py-2 border border-pink rounded-md text-pink font-semibold hover:bg-pink hover:text-base transition-colors duration-300 text-center"
               onClick={() => setIsOpen(false)}
             >
               Let's Connect
-            </Link>
+            </a>
           </li>
         </motion.ul>
       )}

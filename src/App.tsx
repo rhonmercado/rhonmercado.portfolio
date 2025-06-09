@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 const pageVariants = {
   initial: { opacity: 0, y: 20 },
@@ -71,6 +72,21 @@ const App: React.FC = () => {
                 transition={pageTransition}
               >
                 <Projects />
+              </motion.main>
+            }
+          />
+           <Route
+            path="/contact"
+            element={
+              <motion.main
+                className="flex-grow pt-20"
+                initial="initial"
+                animate="in"
+                exit="out"
+                variants={pageVariants}
+                transition={pageTransition}
+              >
+                <Contact />
               </motion.main>
             }
           />
