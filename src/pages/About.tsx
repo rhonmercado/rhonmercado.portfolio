@@ -6,7 +6,6 @@ const personalInfo = [
   { label: "Full Name", value: "Rhonel Edrian Evangelista Mercado" },
   { label: "Age", value: "26 y/o" },
   { label: "Gender", value: "Male" },
-  { label: "Role", value: "Aspiring Full-Stack Developer" },
   { label: "Location", value: "Marilao, Bulacan" },
   { label: "Birthday", value: "05/20/1999" },
   { label: "Nationality", value: "Filipino" },
@@ -17,16 +16,52 @@ const personalInfo = [
 // === Work Experience Data ===
 const workExperience = [
   {
-    role: "Freelance Developer",
-    date: "2023 - Present",
-    desc: "Built websites and small web apps for clients using modern technologies like React and Tailwind.",
+    role: "IT Intern – Front-end Web Developer",
+    company: "PRIME Philippines",
+    location: "3F, IT Center, Ben-Lor Building, Quezon Ave, Diliman, Quezon City, 1103 Metro Manila",
+    date: "Mar.2025 - May 2025",
+    desc: [
+      "Assisted in front-end development using React.",
+      "Refactored reusable components to improve maintainability.",
+      "Identified and fixed UI bugs during testing phase.",
+      "Collaborated using Git and GitHub for version control.",
+    ],
   },
   {
-    role: "Intern – Web Developer",
-    date: "2022",
-    desc: "Assisted in front-end development at a local startup. Helped refactor components, fixed bugs, and learned version control.",
+    role: "Customer Service Representative",
+    company: "Inspiro Manila",
+    location: "España Blvd, Sampaloc, Quezon City, 1008 Metro Manila",
+    date: "Nov. 2019 - Dec. 2019",
+    desc: [
+      "Assisted customers via calls, chat, and email for issue resolution.",
+      "Provided troubleshooting and account support for basic technical concerns.",
+      "Ensured customer satisfaction through clear and effective communication.",
+    ],
+  },
+  {
+    role: "Printing Assistant",
+    company: "NWGT Printing Services",
+    location: "Cubao, Quezon City",
+    date: "Jan.2020 - Jan. 2021",
+    desc: [
+      "Designed and printed materials with quality control and precision.",
+      "Managed incoming cloth deliveries, prepared frames, and organized production materials.",
+      "Maintained workflow efficiency through operational and technical support.",
+    ],
+  },
+    {
+    role: "Computer Shop Assistant",
+    company: "Gabriel's Cyberzone",
+    location: "Marilao, Bulacan",
+    date: "2015",
+    desc: [
+      "Assisted customers with Microsoft Office applications and document formatting",
+      "Installed and updated software while troubleshooting basic computer issues.",
+      "Performed minor computer repairs and ensured system performance.",
+    ],
   },
 ];
+
 
 // === Skills Data ===
 const skillsList = [
@@ -54,10 +89,10 @@ const skillsList = [
   {
     title: "Other Skills",
     skills: [
-      "Problem Solving",
+      "Adaptability",
       "Team Collaboration",
       "Communication",
-      "Adaptability",
+      "Problem Solving",
       "Time Management",
     ],
   },
@@ -87,8 +122,8 @@ const About: React.FC = () => {
                   index % 2 === 0 ? "md:border-r" : ""
                 }`}
               >
-                <p className="text-sm text-white">{label}</p>
-                <p className="text-base font-medium text-pink">{value}</p>
+                <p className="text-sm text-white/60">{label}</p>
+                <p className="text-base font-medium text-white">{value}</p>
               </div>
             ))}
           </div>
@@ -116,10 +151,9 @@ const About: React.FC = () => {
           >
             <span className="absolute -left-[30px] top-3 w-4 h-4 bg-pink rounded-full border-4 border-background"></span>
             <h4 className="font-semibold text-pink">
-              Bachelor of Science in Information Technology - Access Computer
-              College
+              Bachelor of Science in Information Technology - Access Computer College
             </h4>
-            <p className="text-sm text-white">Caloocan City</p>
+            <p className="text-sm text-white/60">Caloocan City</p>
             <p className="text-sm text-white/60">Year Graduated: 2025</p>
             <p className="text-sm mt-1">Graduated with high honors.</p>
           </motion.div>
@@ -136,9 +170,8 @@ const About: React.FC = () => {
             <h4 className="font-semibold text-pink">
               High School Diploma - St. Therese of Rose School
             </h4>
-            <p className="text-sm text-white">Caloocan City</p>
+            <p className="text-sm text-white/60">Caloocan City</p>
             <p className="text-sm text-white/60">Year Graduated: 2015</p>
-            <p className="text-sm mt-1">Graduated with honors.</p>
           </motion.div>
 
           {/* Elementary */}
@@ -153,9 +186,8 @@ const About: React.FC = () => {
             <h4 className="font-semibold text-pink">
               Elementary - Sampaguita Elementary School
             </h4>
-            <p className="text-sm text-white">Caloocan City</p>
+            <p className="text-sm text-white/60">Caloocan City</p>
             <p className="text-sm text-white/60">Year Graduated: 2012</p>
-            <p className="text-sm mt-1">Graduated with honors.</p>
           </motion.div>
         </div>
       </motion.div>

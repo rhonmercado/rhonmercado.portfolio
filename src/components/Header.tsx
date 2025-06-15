@@ -43,7 +43,9 @@ const Header: React.FC = () => {
 
           {/* Let's Connect Email Button (Desktop) */}
           <a
-            href="mailto:rhonmercado520@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&to=rhonmercado520@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="ml-6 px-5 py-2 border border-pink rounded-md text-pink font-semibold hover:bg-pink hover:text-base transition-colors duration-300"
           >
             Let's Connect
@@ -83,9 +85,13 @@ const Header: React.FC = () => {
           {/* Let's Connect Email Button (Mobile) */}
           <li>
             <a
-              href="mailto:rhonmercado520@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&to=rhonmercado520@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block px-4 py-2 border border-pink rounded-md text-pink font-semibold hover:bg-pink hover:text-base transition-colors duration-300 text-center"
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                setTimeout(() => setIsOpen(false), 300); // Optional smooth menu close
+              }}
             >
               Let's Connect
             </a>
